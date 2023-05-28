@@ -1,0 +1,9 @@
+string = input("Enter String : ")
+val_and=" "
+val_or=" "
+
+res_and="".join(chr(ord(char)&127)for char in string)
+print(res_and)
+
+res_and="".join(chr(ord(char)^127)for char in string)
+print(res_and)
